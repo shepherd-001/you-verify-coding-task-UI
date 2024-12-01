@@ -1,10 +1,6 @@
-name: Cypress Tests
+name: You Verify Cypress Tests
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
+on: [push]
 
 jobs:
   test:
@@ -18,8 +14,6 @@ jobs:
       # Set up Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v3
-        with:
-          node-version: 'lts/*'
 
       # Install dependencies
       - name: Install dependencies
@@ -28,3 +22,6 @@ jobs:
       # Run Cypress tests
       - name: Run Cypress tests
         run: npx cypress run
+        env:
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets._GITHUBTOKEN }}
