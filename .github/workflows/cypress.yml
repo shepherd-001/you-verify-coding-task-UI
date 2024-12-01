@@ -29,5 +29,5 @@ jobs:
         with:
           name: cypress-artifacts
           path: |
-#            cypress/videos
+            cypress/videos
             cypress/screenshots
