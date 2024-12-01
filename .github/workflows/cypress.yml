@@ -16,8 +16,8 @@ jobs:
       - name: Start Server
         run: npm start &
 
-      - name: Run Cypress Tests
-        run: npx cypress run
+      - name: Run Cypress in Chrome
+        run: npx cypress run --browser chrome
 
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
@@ -29,5 +29,5 @@ jobs:
         with:
           name: cypress-artifacts
           path: |
-            cypress/videos
+#            cypress/videos
             cypress/screenshots
