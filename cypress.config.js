@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 require('dotenv').config();
 
 module.exports = defineConfig({
+  projectId: "82nbbu",
   e2e: {
     retries: {
       runMode: 2,
