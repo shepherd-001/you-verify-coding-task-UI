@@ -1,0 +1,11 @@
+{
+  "invalidParam": "Laptopgyuitosoe",
+  "emptyInput": "",
+  "validProductName": "Samsung Galaxy S23 Ultra",
+  "validProductBrand": "Microsoft",
+  "oneCharacter": "A",
+  "lengthyInput": "laptop phone power bank fan machine samsung",
+  "validProductCategory": "Laptops",
+  "allUppercaseInput": "LAPTOPS",
+  "misSpelledProductName": "lapttps"
+}
