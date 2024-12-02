@@ -6,3 +6,11 @@ Cypress.Commands.add('searchForProduct', (product) => {
 
     cy.get('#search > .btn').should('be.enabled').click();
 });
+
+Cypress.Commands.add('addProductToCart', (productIndex) => {
+    cy.get('.core').eq(productIndex)
+        .should('be.visible').click();
+
+    cy.get('#add-to-cart > .add').should('be.visible')
+        .and('be.enabled').click();
+});
