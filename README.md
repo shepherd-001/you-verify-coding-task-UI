@@ -1,46 +1,61 @@
-# Jumia Cypress Test Documentation
+# **Jumia Cypress Test Documentation**
 
-This project tests an ecommerce web application called Jumia.
+This project automates the testing of jumia e-commerce web application using cypress.
 
-### System Requirements
-  - Node.js (v14 or latest) installed on your system.
-  - npm (Node Package Manager), which comes with Node.js.
-  - Git for cloning the repository.
-  - IDE to run the code
+---
 
-### Clone the repository
-  - Run the following command on your system terminal to clone the repo:
+### **System Requirements**
+Ensure the following are installed on your system:
+  - **Node.js** (v14 or later).
+  - **npm** (Node Package Manager, included with Node.js).
+  - **Git** for cloning the repository.
+  - **Code Editor or IDE** (e.g. Visual Studio Code)
+
+---
+
+## **Setup Instructions**
+### **1. Clone the Repository**
+  - Run the following command in your terminal:
   ```bash
    git clone https://github.com/shepherd-001/you-verify-coding-task-UI
-  ```
-  - pull the project from the project branch by running the following on your terminal
-  ```bash
-   git pull origin master
-  ```
-Navigate to the project directory
-  ```bash
-   cd <repo-directory>
+   cd <repo-directory>       # Navigate to the project directory 
+   git pull origin master    # Pull the latest updated from the master branch
   ```
 
-### Install dependencies
- - Run the following command to install the dependencies required for the project:
+---
+
+### **2. Install Dependencies**
+ - Install the required dependencies: 
   ```bash
    npm install
   ```
 
-### Running the cypress tests
-###### Running cypress tests in open mode
-   - Type the following command on the terminal
+### **Running the Cypress Tests**
+##### **Option 1: Open Mode(Interactive)**
+   - Run the following command: 
   ```bash
     npx cypress open
   ```
-  - Select the desired file to execute
-###### Running cypress tests in run mode
-   - Type the following command on the terminal
+   - This will open the Cypress Test Runner. Select the desired spec file to execute.  
+  
+
+##### **Option 2: Run Mode(Headless)**
+   - Run the tests in headless mode with the following command:
   ```bash
     npx cypress run
   ```
+   - The results will be displayed in the terminal and saved as logs.
 
-### Reports and logs
-   - After the test runs, the test results will be available in cypress/reports directory.
-   - Screenshots of failed tests will be available in the screenshot folder and the test execution result will be available in the index.html file.
+---
+
+### **Test Reports and Logs**
+   - **Report Directory**: After executing the tests, the results will be saved in the cypress/reports directory.
+   - **Screenshots**: If a test fails, screenshots will be automatically saved in the cypress/screenshots folder.
+   - **HTML Reports**: A detailed test execution summary will be available as index.html in the cypress/reports folder which can be open in a browser.
+
+---
+
+### **Additional Notes**
+   - Ensure you are on the correct branch (master) when pulling the latest changes.
+   - Customize configuration and test data as needed in the cypress.config.js or test files.
+   
