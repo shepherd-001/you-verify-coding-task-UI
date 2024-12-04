@@ -9,14 +9,16 @@ module.exports = defineConfig({
       openMode: 1,
     },
     reporter: "cypress-mochawesome-reporter",
+    screenshotsFolder: "cypress/reports/screenshots",
     reporterOptions: {
       reportDir: "cypress/reports",
-      overwrite: false,
+      overwrite: true,
       html: true,
-      json: true,
+      json: false,
     },
     setupNodeEvents(on, config) {
       require("cypress-mochawesome-reporter/plugin")(on);
+      return config;
     },
     env: {
       apiUrl: process.env.API_URL
@@ -29,6 +31,7 @@ module.exports = defineConfig({
     // viewportHeight: 800,
     // viewportWidth: 1400,
     testIsolation: false,
-    specPattern: "cypress/e2e/*_spec.cy.{js, jsx, ts, tsx}",
+    // specPattern: "cypress/e2e/*_spec.cy.{js, jsx, ts, tsx}",
+    specPattern: "cypress/e2e/*/*.cy.{js, jsx, ts, tsx}",
   },
 });

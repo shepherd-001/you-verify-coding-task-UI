@@ -42,4 +42,5 @@ Navigate to the project directory
   ```
 
 ### Reports and logs
-   - After running the tests, reports will be available in cypress/reports directory.
+   - After the test runs, the test results will be available in cypress/reports directory.
+   - Screenshots of failed tests will be available in the screenshot folder and the test execution result will be available in the index.html file.
