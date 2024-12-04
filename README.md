@@ -1,6 +1,6 @@
 # Jumia Cypress Test Documentation
 
-This project tests the Jumia(an ecommerce website).
+This project tests an ecommerce web application called Jumia.
 
 ### System Requirements
   - Node.js (v14 or latest) installed on your system.
@@ -9,12 +9,15 @@ This project tests the Jumia(an ecommerce website).
   - IDE to run the code
 
 ### Clone the repository
-  - Type the following command on your system terminal to clone the repo:
-  - pull the project from from the project branch by typing the following in your terminal
+  - Run the following command on your system terminal to clone the repo:
+  ```bash
+   git clone https://github.com/shepherd-001/you-verify-coding-task-UI
+  ```
+  - pull the project from the project branch by running the following on your terminal
   ```bash
    git pull origin master
   ```
-Enter the project directory
+Navigate to the project directory
   ```bash
    cd <repo-directory>
   ```
@@ -39,4 +42,4 @@ Enter the project directory
   ```
 
 ### Reports and logs
-   - After running the tests, reports will be available in the cypress/reports directory.
+   - After running the tests, reports will be available in cypress/reports directory.
