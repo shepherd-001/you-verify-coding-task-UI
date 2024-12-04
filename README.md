@@ -12,7 +12,7 @@ This project tests the Jumia(an ecommerce website).
   - Type the following command on your system terminal to clone the repo:
   - pull the project from from the project branch by typing the following in your terminal
   ```bash
-   git pull origin newBranch
+   git pull origin master
   ```
 Enter the project directory
   ```bash
