@@ -6,12 +6,12 @@ describe('Checkout Product Test', ()=>{
 
            cy.get('body').then(($body) => {
             if ($body.find('.card > .prd > .core').length > 0) {
-                // cy.get('a[href="/checkout/summary/]').should('exist').click();
                 cy.get('article.card > .-fs0 > .btn').should('be.visible').click();
                 cy.url().should('include', '/interaction');
             } else
                 cy.log('The cart is empty. Go and add product to cart before you continue.');
         });
+   //         TODO INCOMPLETE IMPLEMENTATION. I WILL COME BACK TO THIS.
    });
 });
 
