@@ -1,14 +1,15 @@
 describe('Add Product To Cart Test', ()=>{
     let searchData;
-
-    // beforeEach(()=>{
-    //     cy.visit('/');
-    // })
+    before(()=>{
+        cy.fixture('searchProductData').then((data) => {
+            searchData = data;
+        })
+    })
 
 
     it('should successfully add a single product to cart', () => {
         cy.visit('/');
-        const searchData = "laptop";
+        searchData = searchData.addProductData
 
         cy.get('.col > .-gy9').should('be.visible').click();
         cy.url().should('include', '/cart/');

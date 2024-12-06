@@ -7,5 +7,6 @@
   "lengthyInput": "laptop phone power bank fan machine samsung",
   "validProductCategory": "Laptops",
   "allUppercaseInput": "LAPTOPS",
-  "misSpelledProductName": "lapttps"
+  "misSpelledProductName": "lapttps",
+  "addProductData": "laptop"
 }

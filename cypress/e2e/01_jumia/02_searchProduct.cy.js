@@ -111,7 +111,7 @@ describe("Search Product Test", ()=>{
             cy.log(`Number of products displayed: ${productCount}`);
             expect(productCount).to.be.greaterThan(0);
         });
-    })
+    });
 
     it("should successfully search for product in all upper case letters", ()=>{
         searchData = productData.allUppercaseInput
@@ -142,5 +142,5 @@ describe("Search Product Test", ()=>{
             cy.log(`Number of products displayed: ${productCount}`);
             expect(productCount).to.be.greaterThan(0);
         });
-    })
-})
+    });
+});
