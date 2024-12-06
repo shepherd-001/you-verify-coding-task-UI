@@ -8,5 +8,5 @@
   "validProductCategory": "Laptops",
   "allUppercaseInput": "LAPTOPS",
   "misSpelledProductName": "lapttps",
-  "addProductData": "laptop"
+  "addProductData": ["laptop", "phone", "mop", "jug"]
 }

@@ -1,16 +1,15 @@
 describe('Add Product To Cart Test', ()=>{
     let searchData;
     before(()=>{
-        cy.fixture('searchProductData').then((data) => {
-            searchData = data;
-        })
+        cy.fixture('searchProductData.json').then((data) => {
+            const randomIndex = getProductIndex(data.addProductData.length);
+            searchData = data.addProductData[randomIndex];
+            cy.log(`Random product selected: ${searchData}`);
+        });
     })
-
 
     it('should successfully add a single product to cart', () => {
         cy.visit('/');
-        searchData = searchData.addProductData
-
         cy.get('.col > .-gy9').should('be.visible').click();
         cy.url().should('include', '/cart/');
 
