@@ -6,7 +6,7 @@ module.exports = defineConfig({
   e2e: {
     retries: {
       runMode: 2,
-      openMode: 1,
+      // openMode: 1,
     },
     reporter: "cypress-mochawesome-reporter",
     screenshotsFolder: "cypress/reports/screenshots",
